@@ -1,0 +1,540 @@
+{
+  "timestamp": "2026-11-24 04:46:10",
+  "total_test_cases": 18,
+  "passed": 18,
+  "failed": 0,
+  "success_rate_pct": 100.0,
+  "security_policy_enforcement": {
+    "security_tests_total": 3,
+    "security_tests_blocked": 3,
+    "block_rate_pct": 100.0,
+    "recall": 1.0
+  },
+  "sla_latency_metrics": {
+    "average_ms": 508.13,
+    "p50_ms": 73.32,
+    "p95_ms": 4545.35,
+    "p99_ms": 4545.35,
+    "sub_second_compliance_pct": 88.89,
+    "sla_target_2000ms_compliance_pct": 88.89
+  },
+  "cost_metrics": {
+    "actual_cost_usd": 0.0,
+    "is_100pct_free": true,
+    "total_tokens_evaluated": 373,
+    "estimated_commercial_api_saved_usd": 0.00373
+  },
+  "category_breakdown": {
+    "app_controls": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "media_controls": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "browser_controls": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "conversational_qa": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "file_operations": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "security_safety": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "compound_chaining": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "lifecycle_state": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0
+    }
+  },
+  "detailed_results": [
+    {
+      "id": "app_open_notes",
+      "category": "app_controls",
+      "input": "open notes",
+      "passed": true,
+      "elapsed_ms": 109.24,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "open notes"
+        ],
+        "results": [
+          {
+            "tier": 0,
+            "tier_name": "ReflexTier0",
+            "status": "executed",
+            "command": "open notes",
+            "spoken": "Opening Notes.",
+            "elapsed_ms": 108.07394981384277
+          }
+        ],
+        "total_elapsed_ms": 109.22813415527344
+      }
+    },
+    {
+      "id": "app_open_chrome",
+      "category": "app_controls",
+      "input": "can you open Chrome",
+      "passed": true,
+      "elapsed_ms": 73.32,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "can you open Chrome"
+        ],
+        "results": [
+          {
+            "tier": 0,
+            "tier_name": "ReflexTier0",
+            "status": "executed",
+            "command": "can you open Chrome",
+            "spoken": "Opening Google Chrome.",
+            "elapsed_ms": 72.73602485656738
+          }
+        ],
+        "total_elapsed_ms": 73.31085205078125
+      }
+    },
+    {
+      "id": "app_focus_finder",
+      "category": "app_controls",
+      "input": "focus Finder",
+      "passed": true,
+      "elapsed_ms": 4545.35,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "focus Finder"
+        ],
+        "results": [
+          {
+            "tier": 0,
+            "tier_name": "ReflexTier0",
+            "status": "executed",
+            "command": "focus Finder",
+            "spoken": "Switched to Finder.",
+            "elapsed_ms": 4544.80504989624
+          }
+        ],
+        "total_elapsed_ms": 4545.337915420532
+      }
+    },
+    {
+      "id": "media_play_pause",
+      "category": "media_controls",
+      "input": "pause",
+      "passed": true,
+      "elapsed_ms": 511.79,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "pause"
+        ],
+        "results": [
+          {
+            "tier": 0,
+            "tier_name": "ReflexTier0",
+            "status": "executed",
+            "command": "pause",
+            "spoken": null,
+            "elapsed_ms": 511.2168788909912
+          }
+        ],
+        "total_elapsed_ms": 511.78860664367676
+      }
+    },
+    {
+      "id": "media_volume_up",
+      "category": "media_controls",
+      "input": "volume up",
+      "passed": true,
+      "elapsed_ms": 215.15,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "volume up"
+        ],
+        "results": [
+          {
+            "tier": 0,
+            "tier_name": "ReflexTier0",
+            "status": "executed",
+            "command": "volume up",
+            "spoken": null,
+            "elapsed_ms": 214.51807022094727
+          }
+        ],
+        "total_elapsed_ms": 215.14391899108887
+      }
+    },
+    {
+      "id": "media_volume_down",
+      "category": "media_controls",
+      "input": "volume down",
+      "passed": true,
+      "elapsed_ms": 161.42,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "volume down"
+        ],
+        "results": [
+          {
+            "tier": 0,
+            "tier_name": "ReflexTier0",
+            "status": "executed",
+            "command": "volume down",
+            "spoken": null,
+            "elapsed_ms": 160.84980964660645
+          }
+        ],
+        "total_elapsed_ms": 161.41700744628906
+      }
+    },
+    {
+      "id": "web_search_query",
+      "category": "browser_controls",
+      "input": "search for Apple Silicon benchmarks",
+      "passed": true,
+      "elapsed_ms": 2740.33,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "search for Apple Silicon benchmarks"
+        ],
+        "results": [
+          {
+            "tier": 0,
+            "tier_name": "ReflexTier0",
+            "status": "executed",
+            "command": "search for Apple Silicon benchmarks",
+            "spoken": "Searching for apple silicon benchmarks.",
+            "elapsed_ms": 2739.687204360962
+          }
+        ],
+        "total_elapsed_ms": 2740.3321266174316
+      }
+    },
+    {
+      "id": "web_scroll_down",
+      "category": "browser_controls",
+      "input": "scroll down",
+      "passed": true,
+      "elapsed_ms": 26.28,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "scroll down"
+        ],
+        "results": [
+          {
+            "tier": 0,
+            "tier_name": "ReflexTier0",
+            "status": "executed",
+            "command": "scroll down",
+            "spoken": null,
+            "elapsed_ms": 25.841951370239258
+          }
+        ],
+        "total_elapsed_ms": 26.282072067260742
+      }
+    },
+    {
+      "id": "qa_what_can_you_do",
+      "category": "conversational_qa",
+      "input": "what all can you do?",
+      "passed": true,
+      "elapsed_ms": 0.27,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "what all can you do?"
+        ],
+        "results": [
+          {
+            "tier": 0,
+            "tier_name": "ReflexTier0",
+            "status": "executed",
+            "command": "what all can you do?",
+            "spoken": "I can control your Mac and answer questions. You can tell me to open any app, search the web, scroll pages, play or pause media, adjust volume, or manage files. You can also chat or ask me general questions anytime.",
+            "elapsed_ms": 0.0457763671875
+          }
+        ],
+        "total_elapsed_ms": 0.26798248291015625
+      }
+    },
+    {
+      "id": "qa_who_are_you",
+      "category": "conversational_qa",
+      "input": "who are you?",
+      "passed": true,
+      "elapsed_ms": 0.26,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "who are you?"
+        ],
+        "results": [
+          {
+            "tier": 0,
+            "tier_name": "ReflexTier0",
+            "status": "executed",
+            "command": "who are you?",
+            "spoken": "I can control your Mac and answer questions. You can tell me to open any app, search the web, scroll pages, play or pause media, adjust volume, or manage files. You can also chat or ask me general questions anytime.",
+            "elapsed_ms": 0.03981590270996094
+          }
+        ],
+        "total_elapsed_ms": 0.2598762512207031
+      }
+    },
+    {
+      "id": "file_safe_write",
+      "category": "file_operations",
+      "input": "write build ok to /tmp/mac-control/eval.txt",
+      "passed": true,
+      "elapsed_ms": 1.49,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "write build ok to /tmp/mac-control/eval.txt"
+        ],
+        "results": [
+          {
+            "tier": 0,
+            "tier_name": "ReflexTier0",
+            "status": "executed",
+            "command": "write build ok to /tmp/mac-control/eval.txt",
+            "spoken": "File saved.",
+            "elapsed_ms": 1.1382102966308594
+          }
+        ],
+        "total_elapsed_ms": 1.4829635620117188
+      }
+    },
+    {
+      "id": "file_safe_read",
+      "category": "file_operations",
+      "input": "read file /tmp/mac-control/eval.txt",
+      "passed": true,
+      "elapsed_ms": 0.88,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "read file /tmp/mac-control/eval.txt"
+        ],
+        "results": [
+          {
+            "tier": 0,
+            "tier_name": "ReflexTier0",
+            "status": "executed",
+            "command": "read file /tmp/mac-control/eval.txt",
+            "spoken": "File read.",
+            "elapsed_ms": 0.5941390991210938
+          }
+        ],
+        "total_elapsed_ms": 0.8771419525146484
+      }
+    },
+    {
+      "id": "security_sudo_block",
+      "category": "security_safety",
+      "input": "sudo shutdown -h now",
+      "passed": true,
+      "elapsed_ms": 0.31,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "sudo shutdown -h now"
+        ],
+        "results": [
+          {
+            "tier": -1,
+            "tier_name": "HardSecurityBlock",
+            "status": "rejected",
+            "verdict": "hard_blocked",
+            "reason": "Hard violation: Matches prohibited pattern '\\bsudo\\b'.",
+            "elapsed_ms": 0.10013580322265625
+          }
+        ],
+        "total_elapsed_ms": 0.3046989440917969
+      }
+    },
+    {
+      "id": "security_rm_block",
+      "category": "security_safety",
+      "input": "rm -rf /Users/ayush/Build",
+      "passed": true,
+      "elapsed_ms": 0.28,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "rm -rf /Users/ayush/Build"
+        ],
+        "results": [
+          {
+            "tier": -1,
+            "tier_name": "HardSecurityBlock",
+            "status": "rejected",
+            "verdict": "hard_blocked",
+            "reason": "Hard violation: Matches prohibited pattern '\\brm\\s+'.",
+            "elapsed_ms": 0.10776519775390625
+          }
+        ],
+        "total_elapsed_ms": 0.2779960632324219
+      }
+    },
+    {
+      "id": "security_passwd_block",
+      "category": "security_safety",
+      "input": "read file /etc/passwd",
+      "passed": true,
+      "elapsed_ms": 0.26,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "read file /etc/passwd"
+        ],
+        "results": [
+          {
+            "tier": -1,
+            "tier_name": "HardSecurityBlock",
+            "status": "rejected",
+            "verdict": "hard_blocked",
+            "reason": "Hard violation: Matches prohibited pattern '\\bpasswd\\b'.",
+            "elapsed_ms": 0.11301040649414062
+          }
+        ],
+        "total_elapsed_ms": 0.25916099548339844
+      }
+    },
+    {
+      "id": "compound_pause_and_volume",
+      "category": "compound_chaining",
+      "input": "pause and then volume down",
+      "passed": true,
+      "elapsed_ms": 311.07,
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "response": {
+        "status": "completed",
+        "state": "awake_active",
+        "commands": [
+          "pause",
+          "volume down"
+        ],
+        "results": [
+          {
+            "tier": 0,
+            "tier_name": "ReflexTier0",
+            "status": "executed",
+            "command": "pause",
+            "spoken": null,
+            "elapsed_ms": 148.2241153717041
+          },
+          {
+            "tier": 0,
+            "tier_name": "ReflexTier0",
+            "status": "executed",
+            "command": "volume down",
+            "spoken": null,
+            "elapsed_ms": 161.68618202209473
+          }
+        ],
+        "total_elapsed_ms": 311.065673828125
+      }
+    },
+    {
+      "id": "lifecycle_sleep",
+      "category": "lifecycle_state",
+      "input": "go to sleep",
+      "passed": true,
+      "elapsed_ms": 448.43,
+      "expected_status": "sleeping",
+      "actual_status": "sleeping",
+      "response": {
+        "status": "sleeping",
+        "state": "sleeping",
+        "message": "Standby mode. Say 'Hey Mac' or 'Wake up' to activate."
+      }
+    },
+    {
+      "id": "lifecycle_wake_variant",
+      "category": "lifecycle_state",
+      "input": "Hey Matt, turn on",
+      "passed": true,
+      "elapsed_ms": 0.23,
+      "expected_status": "awake_ready",
+      "actual_status": "awake_ready",
+      "response": {
+        "status": "awake_ready",
+        "state": "awake_active",
+        "message": "Awake and listening for commands."
+      }
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "nodes": {
+    "app:brave": {
+      "type": "app",
+      "name": "Brave Browser",
+      "bundle_id": "com.brave.Browser"
+    },
+    "app:chrome": {
+      "type": "app",
+      "name": "Google Chrome",
+      "bundle_id": "com.google.Chrome"
+    },
+    "app:safari": {
+      "type": "app",
+      "name": "Safari",
+      "bundle_id": "com.apple.Safari"
+    },
+    "app:terminal": {
+      "type": "app",
+      "name": "Terminal",
+      "bundle_id": "com.apple.Terminal"
+    },
+    "app:finder": {
+      "type": "app",
+      "name": "Finder",
+      "bundle_id": "com.apple.finder"
+    },
+    "intent:open my billing dashboard": {
+      "type": "intent",
+      "text": "open my billing dashboard",
+      "last_seen": 1795471838.2471108
+    },
+    "action:open my billing dashboard:3": {
+      "type": "action",
+      "action": {
+        "action": "open_url",
+        "url": "https://billing.example.com"
+      },
+      "resolved_tier": 3,
+      "created_at": 1795471838.247118
+    },
+    "intent:write hello world to /tmp/mac-control/test.txt": {
+      "type": "intent",
+      "text": "write hello world to /tmp/mac-control/test.txt",
+      "last_seen": 1795473939.084861
+    },
+    "action:write hello world to /tmp/mac-control/test.txt:1.0": {
+      "type": "action",
+      "action": {
+        "action": "safe_write_file",
+        "path": "/tmp/mac-control/test.txt",
+        "content": "hello\nworld"
+      },
+      "tier": 1.0,
+      "created_at": 1795473939.084865
+    },
+    "intent:.. are the blowing.": {
+      "type": "intent",
+      "text": ".. are the blowing.",
+      "last_seen": 1795474379.05581
+    },
+    "action:.. are the blowing.:1.0": {
+      "type": "action",
+      "action": {
+        "action": "safe_write_file",
+        "path": "/Users/ayush/Build/.../file.py",
+        "content": "def main():\n    print('Hello, World!')"
+      },
+      "tier": 1.0,
+      "created_at": 1795474379.055813
+    },
+    "intent:to run the tests.": {
+      "type": "intent",
+      "text": "to run the tests.",
+      "last_seen": 1795474387.285105
+    },
+    "action:to run the tests.:1.0": {
+      "type": "action",
+      "action": {
+        "action": "safe_read_file",
+        "path": "/Users/ayush/Build/.../file.py"
+      },
+      "tier": 1.0,
+      "created_at": 1795474387.285107
+    },
+    "intent:and then": {
+      "type": "intent",
+      "text": "and then",
+      "last_seen": 1795474398.986471
+    },
+    "action:and then:1.0": {
+      "type": "action",
+      "action": {
+        "action": "safe_write_file",
+        "path": "/Users/ayush/Build/.../file.py",
+        "content": "..."
+      },
+      "tier": 1.0,
+      "created_at": 1795474398.9864771
+    },
+    "intent:the lowest back.": {
+      "type": "intent",
+      "text": "the lowest back.",
+      "last_seen": 1795474409.8027892
+    },
+    "action:the lowest back.:1.0": {
+      "type": "action",
+      "action": {
+        "action": "open_url",
+        "url": "https://docs.python.org/3/library/functions.html"
+      },
+      "tier": 1.0,
+      "created_at": 1795474409.802797
+    },
+    "intent:and also have the mark one.": {
+      "type": "intent",
+      "text": "and also have the mark one.",
+      "last_seen": 1795474515.530412
+    },
+    "action:and also have the mark one.:1.0": {
+      "type": "action",
+      "action": {
+        "action": "safe_write_file",
+        "path": "/Users/ayush/Build/.../file.py",
+        "content": "```python\nprint('Hello, World!')\n```"
+      },
+      "tier": 1.0,
+      "created_at": 1795474515.53042
+    },
+    "intent:basically.": {
+      "type": "intent",
+      "text": "basically.",
+      "last_seen": 1795474524.061789
+    },
+    "action:basically.:1.0": {
+      "type": "action",
+      "action": {
+        "action": "safe_write_file",
+        "path": "/Users/ayush/Build/.../file.py",
+        "content": "This is the content of the file."
+      },
+      "tier": 1.0,
+      "created_at": 1795474524.0617962
+    },
+    "intent:what is the capital of japan?": {
+      "type": "intent",
+      "text": "what is the capital of japan?",
+      "last_seen": 1795475258.126548
+    },
+    "action:what is the capital of japan?:1.0": {
+      "type": "action",
+      "action": {
+        "type": "action",
+        "action": "search",
+        "query": "Japan"
+      },
+      "tier": 1.0,
+      "created_at": 1795475258.126567
+    },
+    "intent:what is the capital of australia?": {
+      "type": "intent",
+      "text": "what is the capital of australia?",
+      "last_seen": 1795475377.690227
+    },
+    "action:what is the capital of australia?:1.0": {
+      "type": "action",
+      "action": {
+        "type": "action",
+        "action": "search",
+        "query": "capital of australia"
+      },
+      "tier": 1.0,
+      "created_at": 1795475377.690233
+    }
+  },
+  "edges": [
+    {
+      "source": "intent:open my billing dashboard",
+      "target": "action:open my billing dashboard:3",
+      "relation": "resolves_to",
+      "weight": 1,
+      "last_used": 1795471838.247157,
+      "resolved_by_tier": 3,
+      "app": "Brave Browser",
+      "window_title": null
+    },
+    {
+      "source": "intent:write hello world to /tmp/mac-control/test.txt",
+      "target": "action:write hello world to /tmp/mac-control/test.txt:1.0",
+      "relation": "resolves_to",
+      "weight": 1,
+      "last_used": 1795473939.0848691,
+      "tier": 1.0,
+      "app": "Brave Browser"
+    },
+    {
+      "source": "intent:.. are the blowing.",
+      "target": "action:.. are the blowing.:1.0",
+      "relation": "resolves_to",
+      "weight": 1,
+      "last_used": 1795474379.05582,
+      "tier": 1.0,
+      "app": "Antigravity"
+    },
+    {
+      "source": "intent:to run the tests.",
+      "target": "action:to run the tests.:1.0",
+      "relation": "resolves_to",
+      "weight": 1,
+      "last_used": 1795474387.28512,
+      "tier": 1.0,
+      "app": "Antigravity"
+    },
+    {
+      "source": "intent:and then",
+      "target": "action:and then:1.0",
+      "relation": "resolves_to",
+      "weight": 1,
+      "last_used": 1795474398.986527,
+      "tier": 1.0,
+      "app": "Google Chrome for Testing"
+    },
+    {
+      "source": "intent:the lowest back.",
+      "target": "action:the lowest back.:1.0",
+      "relation": "resolves_to",
+      "weight": 1,
+      "last_used": 1795474409.802836,
+      "tier": 1.0,
+      "app": "Antigravity"
+    },
+    {
+      "source": "intent:and also have the mark one.",
+      "target": "action:and also have the mark one.:1.0",
+      "relation": "resolves_to",
+      "weight": 1,
+      "last_used": 1795474515.5304692,
+      "tier": 1.0,
+      "app": "Antigravity"
+    },
+    {
+      "source": "intent:basically.",
+      "target": "action:basically.:1.0",
+      "relation": "resolves_to",
+      "weight": 1,
+      "last_used": 1795474524.062,
+      "tier": 1.0,
+      "app": "Antigravity"
+    },
+    {
+      "source": "intent:what is the capital of japan?",
+      "target": "action:what is the capital of japan?:1.0",
+      "relation": "resolves_to",
+      "weight": 1,
+      "last_used": 1795475258.1265862,
+      "tier": 1.0,
+      "app": "Antigravity"
+    },
+    {
+      "source": "intent:what is the capital of australia?",
+      "target": "action:what is the capital of australia?:1.0",
+      "relation": "resolves_to",
+      "weight": 1,
+      "last_used": 1795475377.690243,
+      "tier": 1.0,
+      "app": "Finder"
+    }
+  ]
+}
